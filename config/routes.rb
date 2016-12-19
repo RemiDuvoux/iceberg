@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
   devise_for :users
   root to: 'pages#home'
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  resources :vc_firms, only: [:index, :new, :create, :edit, :update, :show, :delete] do
+    resources :startups, only: :index
+  end
+  resources :startups, only: [:show]
 end

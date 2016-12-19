@@ -10,10 +10,32 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161219093430) do
+ActiveRecord::Schema.define(version: 20161219095219) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "rounds", force: :cascade do |t|
+    t.date     "date"
+    t.string   "ammount"
+    t.integer  "vc_firm_id"
+    t.integer  "startup_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["startup_id"], name: "index_rounds_on_startup_id", using: :btree
+    t.index ["vc_firm_id"], name: "index_rounds_on_vc_firm_id", using: :btree
+  end
+
+  create_table "startups", force: :cascade do |t|
+    t.string   "name"
+    t.text     "description"
+    t.string   "logo"
+    t.string   "twitter"
+    t.string   "facebook"
+    t.string   "sector"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
@@ -32,4 +54,27 @@ ActiveRecord::Schema.define(version: 20161219093430) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
   end
 
+  create_table "vc_firms", force: :cascade do |t|
+    t.string   "vc_type"
+    t.string   "city"
+    t.string   "office_address"
+    t.text     "description"
+    t.string   "website"
+    t.string   "name"
+    t.string   "logo"
+    t.string   "twitter"
+    t.string   "facebook"
+    t.string   "seed_stage"
+    t.string   "series_a"
+    t.string   "series_b"
+    t.string   "series_c"
+    t.string   "growth_stage"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+    t.string   "creation_date"
+    t.string   "country"
+  end
+
+  add_foreign_key "rounds", "startups"
+  add_foreign_key "rounds", "vc_firms"
 end
