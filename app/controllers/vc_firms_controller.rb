@@ -1,4 +1,5 @@
 class VcFirmsController < ApplicationController
+  skip_before_action :authenticate_user!, only: [:index, :show]
   def index
     if params[:query].nil?
       @vc_firms = VcFirm.all
@@ -13,6 +14,8 @@ class VcFirmsController < ApplicationController
     elsif params[:query] == "growth_stage"
       @vc_firms = VcFirm.where.not(:growth_stage => nil)
     end
+
+
   end
 
   def show

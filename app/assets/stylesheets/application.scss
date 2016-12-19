@@ -15,8 +15,9 @@
 @import "vendor/index";
 @import "components/banner";
 @import "components/button";
-@import "components/table";
 @import "components/card";
 @import "components/avatars";
-@import "components/sidebar";
 
+body {
+  margin-top: 100px;
+}

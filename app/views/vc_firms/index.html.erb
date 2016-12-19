@@ -1,65 +1,35 @@
 <div class="wrapper">
- <div id="sidebar-wrapper">
-  <ul class="sidebar-nav">
-    <li class="sidebar-brand">
-      <a href="#">
-        Sectors
-      </a>
-    </li>
-    <li>
-      <a href="#">Ecommerce</a>
-    </li>
-    <li>
-      <a href="#">Big Data</a>
-    </li>
-    <li>
-      <a href="#">Hardware</a>
-    </li>
-    <li>
-      <a href="#">FoodTech</a>
-    </li>
-    <li>
-      <a href="#">Fashion</a>
-    </li>
-    <li>
-      <a href="#">Travel</a>
-    </li>
-    <li>
-      <a href="#">Saas</a>
-    </li>
-    <li>
-      <a href="#">Fintech</a>
-    </li>
-    <li>
-      <a href="#">Entertainment</a>
-    </li>
-    <li>
-      <a href="#">Health</a>
-    </li>
-    <li>
-      <a href="#">Education</a>
-    </li>
-    <li>
-      <a href="#">Energy</a>
-    </li>
-    <li>
-      <a href="#">Platform</a>
-    </li>
-    <li>
-      <a href="#">Saas</a>
-    </li>
-  </ul>
-</div>
-
-
-<div id="page-content-wrapper">
-  <div class="container-fluid">
+  <div class="filters-container text-center">
+    <ul class="list-inline">
+      <li>
+        <form id=filters>
+          <label style="font-size:12px;"><input type="checkbox" name="stage" value="seed-stage" class="stage" /> Seed stage</label>
+          <label style="font-size:12px;"><input type="checkbox" name="stage" value="series-a" class="stage" /> Series A</label>
+          <label style="font-size:12px;"><input type="checkbox" name="stage" value="series-b" class="stage" /> Series B</label>
+          <label style="font-size:12px;"><input type="checkbox" name="stage" value="series-c" class="stage" /> Series C</label>
+          <label style="font-size:12px;"><input type="checkbox" name="stage" value="growth-stage" class="stage" /> Growth Stage</label>
+        </form>
+      </li>
+    </ul>
+  </div>
+  <div class="container">
     <div class="row">
-    <div class="col-md-8 col-md-offset-3">
-        <% @vc_firms.each do |vc_firm| %>
+      <% @vc_firms.each do |vc_firm| %>
+      <div class="col-md-6">
         <%= render 'vc_card', vc_firm: vc_firm %>
-        <% end %>
       </div>
+      <% end %>
     </div>
   </div>
 </div>
+
+<% content_for(:after_js) do %>
+<script>
+    $(document).ready(function() {
+        var stages_list = [];
+        $('.stage').on('change',function({
+
+</script>
+<% end %>
+
+
