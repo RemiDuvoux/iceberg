@@ -1,0 +1,15 @@
+
+      <div class="card">
+        <div class="card-category"><%= vc_firm.vc_type %></div>
+        <h2><%= vc_firm.name %></h2>
+        <div class="card-description">
+          <p><%if vc_firm.seed_stage%>Seed stage <% end %><%if vc_firm.series_a%>Series A <% end %> <%if vc_firm.series_b%>Series B <% end %><%if vc_firm.series_c%>Series C <% end %><%if vc_firm.growth_stage%>Growth stage<% end %></p>
+        </div>
+        <%= cl_image_tag vc_firm.logo, class: "card-logo avatar-large"%>
+        <%= link_to "", vc_firm_path(vc_firm), class: "card-link" %>
+        <span class="card-sectors">
+          <% vc_firm.startups.map {|startup| startup.sector}.uniq.each do |sector| %>
+            <%= sector %>
+          <% end %>
+        </span>
+      </div>
