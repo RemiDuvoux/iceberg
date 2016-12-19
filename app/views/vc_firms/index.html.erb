@@ -3,11 +3,11 @@
     <ul class="list-inline">
       <li>
         <form id=filters>
-          <label style="font-size:12px;"><input type="checkbox" name="stage" value="seed-stage" class="stage" /> Seed stage</label>
-          <label style="font-size:12px;"><input type="checkbox" name="stage" value="series-a" class="stage" /> Series A</label>
-          <label style="font-size:12px;"><input type="checkbox" name="stage" value="series-b" class="stage" /> Series B</label>
-          <label style="font-size:12px;"><input type="checkbox" name="stage" value="series-c" class="stage" /> Series C</label>
-          <label style="font-size:12px;"><input type="checkbox" name="stage" value="growth-stage" class="stage" /> Growth Stage</label>
+          <label style="font-size:12px;"><input type="checkbox" name="stage" value="seed_stage" class="stage" /> Seed stage</label>
+          <label style="font-size:12px;"><input type="checkbox" name="stage" value="series_a" class="stage" /> Series A</label>
+          <label style="font-size:12px;"><input type="checkbox" name="stage" value="series_b" class="stage" /> Series B</label>
+          <label style="font-size:12px;"><input type="checkbox" name="stage" value="series_c" class="stage" /> Series C</label>
+          <label style="font-size:12px;"><input type="checkbox" name="stage" value="growth_stage" class="stage" /> Growth Stage</label>
         </form>
       </li>
     </ul>
@@ -25,10 +25,19 @@
 
 <% content_for(:after_js) do %>
 <script>
-    $(document).ready(function() {
-        var stages_list = [];
-        $('.stage').on('change',function({
-
+  $(document).ready(function() {
+    $('.stage').on('change',function(){
+      var stage_list = [];
+      $('#filters :input:checked').each(function(){
+        var stage = $(this).val();
+        stage_list.push(stage);
+        $(document).find('.card').addClass("hidden");
+        stage_list.forEach(function(stage){
+          $(document).find('.'+ stage).removeClass("hidden");
+        });
+      });
+    });
+  });
 </script>
 <% end %>
 
