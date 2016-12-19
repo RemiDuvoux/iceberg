@@ -1,22 +1,22 @@
 <div class="wrapper">
   <div class="filters-container text-center">
-        <form id=stage-filters>
-          <label style="font-size:12px;"><input type="checkbox" name="stage" value="seed_stage" class="stage" /> Seed stage</label>
-          <label style="font-size:12px;"><input type="checkbox" name="stage" value="series_a" class="stage" /> Series A</label>
-          <label style="font-size:12px;"><input type="checkbox" name="stage" value="series_b" class="stage" /> Series B</label>
-          <label style="font-size:12px;"><input type="checkbox" name="stage" value="series_c" class="stage" /> Series C</label>
-          <label style="font-size:12px;"><input type="checkbox" name="stage" value="growth_stage" class="stage" /> Growth Stage</label>
-        </form>
-        <form id="sector-filters">
-          <label style="font-size:12px;"><input type="checkbox" name="sector" value="hardware" class="sector" /> Hardware</label>
-          <label style="font-size:12px;"><input type="checkbox" name="sector" value="ecommerce" class="sector" />Ecommerce</label>
-          <label style="font-size:12px;"><input type="checkbox" name="sector" value="bigdata" class="sector" />Big Data</label>
-          <label style="font-size:12px;"><input type="checkbox" name="sector" value="foodtech" class="sector" />Food Tech</label>
-          <label style="font-size:12px;"><input type="checkbox" name="sector" value="platform" class="sector" />Platform</label>
-          <label style="font-size:12px;"><input type="checkbox" name="sector" value="platform" class="sector" />Travel</label>
-          <label style="font-size:12px;"><input type="checkbox" name="sector" value="platform" class="sector" />Saas</label>
+    <form id=stage-filters>
+    <label style="font-size:12px;"><input type="checkbox" name="stage" value="seed_stage" class="stage filter" /> Seed stage</label>
+    <label style="font-size:12px;"><input type="checkbox" name="stage" value="series_a" class="stage filter" /> Series A</label>
+    <label style="font-size:12px;"><input type="checkbox" name="stage" value="series_b" class="stage filter" /> Series B</label>
+    <label style="font-size:12px;"><input type="checkbox" name="stage" value="series_c" class="stage filter" /> Series C</label>
+    <label style="font-size:12px;"><input type="checkbox" name="stage" value="growth_stage" class="stage filter" /> Growth Stage</label>
+    </form>
+    <form id="sector-filters">
+      <label style="font-size:12px;"><input type="checkbox" name="sector" value="hardware" class="sector filter" /> Hardware</label>
+      <label style="font-size:12px;"><input type="checkbox" name="sector" value="ecommerce" class="sector filter" />Ecommerce</label>
+      <label style="font-size:12px;"><input type="checkbox" name="sector" value="bigdata" class="sector filter" />Big Data</label>
+      <label style="font-size:12px;"><input type="checkbox" name="sector" value="foodtech" class="sector filter" />Food Tech</label>
+      <label style="font-size:12px;"><input type="checkbox" name="sector" value="platform" class="sector filter" />Platform</label>
+      <label style="font-size:12px;"><input type="checkbox" name="sector" value="platform" class="sector filter" />Travel</label>
+      <label style="font-size:12px;"><input type="checkbox" name="sector" value="platform" class="sector" />Saas</label>
 
-        </form>
+    </form>
   </div>
   <div class="container">
     <div class="row">
@@ -37,32 +37,32 @@
 
 
   // Filtering for stage with Jquery
-  $('.stage').on('click',function(){
+  $('.filter').on('click',function(){
     var stage_list = [];
     if ($('#stage-filters :input:checked').length == 0){
-      $(document).find('.card').addClass("display-none")};
+      $(document).find('.card').parent().addClass("display-none")};
       $('#stage-filters :input:checked').each(function(){
         var stage = $(this).val();
         stage_list.push(stage);
-        $(document).find('.card').addClass("display-none");
+        $(document).find('.card').parent().addClass("display-none");
       });
       stage_list.forEach(function(stage){
-        $(document).find('.'+ stage).removeClass("display-none");
+        $(document).find('.'+ stage).parent().removeClass("display-none");
       });
     });
 
   // Filtering for sector with Jquery
   $('.sector').on('click',function(){
-    var sector_list = [];
+
     if ($('#sector-filters :input:checked').length == 0){
-      $(document).find('.card').addClass("display-none")};
+      $(document).find('.card').parent().parent().addClass("display-none")};
       $('#sector-filters :input:checked').each(function(){
         var sector = $(this).val();
         sector_list.push(sector);
-        $(document).find('.card').addClass("display-none");
+        $(document).find('.card').parent().addClass("display-none");
       });
       sector_list.forEach(function(sector){
-        $(document).find('.'+ sector).removeClass("display-none");
+        $(document).find('.'+ sector).parent().removeClass("display-none");
       });
     });
 
