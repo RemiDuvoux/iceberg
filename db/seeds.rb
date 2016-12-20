@@ -15,6 +15,6 @@ CSV.foreach(filepath_startups, csv_options) do |row|
   new_round = Round.new
   new_round.startup = new_startup
   new_round.vc_firm = VcFirm.find_by(name: row[0])
-  new_startup.save!
   new_round.save!
+  new_startup.save!
 end
