@@ -17,6 +17,18 @@
           <% if @vc_firm.vc_type %>
           <p>Type : <%= @vc_firm.vc_type %></p>
           <% end %>
+          <% if @vc_firm.website %>
+          <%= link_to "", @vc_firm.website, class: "fa fa-link", target: '_blank', style: "text-decoration: none ; font-size: 30px; margin: 15px"  %>
+          <% end %>
+          <% if @vc_firm.facebook %>
+          <%= link_to "", @vc_firm.facebook, class: "fa fa-facebook", target: '_blank', style: "text-decoration: none ; font-size: 30px; margin: 15px"  %>
+          <% end %>
+          <% if @vc_firm.twitter %>
+          <%= link_to "", @vc_firm.twitter, class: "fa fa-twitter", target: '_blank', style: "text-decoration: none; font-size: 30px; margin: 15px"  %>
+          <% end %>
+          <% if @vc_firm.office_address %>
+          <p>Adresse: <%= @vc_firm.office_address %></p>
+          <% end %>
         </div>
       </div>
       <div class="col-xs-4">
@@ -30,19 +42,7 @@
       </div>
       <div class="col-xs-4">
         <div class="text-center show-box">
-        <h2>Get in touch</h2>
-          <% if @vc_firm.website %>
-          <%= link_to "", @vc_firm.website, class: "fa fa-link", target: '_blank', style: "text-decoration: none ; font-size: 30px; margin: 15px"  %>
-          <% end %>
-          <% if @vc_firm.facebook %>
-          <%= link_to "", @vc_firm.facebook, class: "fa fa-facebook", target: '_blank', style: "text-decoration: none ; font-size: 30px; margin: 15px"  %>
-          <% end %>
-          <% if @vc_firm.twitter %>
-          <%= link_to "", @vc_firm.twitter, class: "fa fa-twitter", target: '_blank', style: "text-decoration: none; font-size: 30px; margin: 15px"  %>
-          <% end %>
-          <% if @vc_firm.office_address %>
-          <p>Adresse: <%= @vc_firm.office_address %></p>
-          <% end %>
+          <a class="twitter-timeline" data-lang="en" data-width="400" data-height="400" href="https://twitter.com/<%= @vc_firm.twitter %>">Tweets by <%= @vc_firm.twitter %></a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
         </div>
       </div>
     </div>
