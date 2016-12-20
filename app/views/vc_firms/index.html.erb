@@ -8,14 +8,9 @@
     <label style="font-size:12px;"><input type="checkbox" name="stage" value="growth_stage" class="stage filter" /> Growth Stage</label>
     </form>
     <form id="sector-filters">
-      <label style="font-size:12px;"><input type="checkbox" name="sector" value="hardware" class="sector filter" /> Hardware</label>
-      <label style="font-size:12px;"><input type="checkbox" name="sector" value="ecommerce" class="sector filter" />Ecommerce</label>
-      <label style="font-size:12px;"><input type="checkbox" name="sector" value="bigdata" class="sector filter" />Big Data</label>
-      <label style="font-size:12px;"><input type="checkbox" name="sector" value="foodtech" class="sector filter" />Food Tech</label>
-      <label style="font-size:12px;"><input type="checkbox" name="sector" value="platform" class="sector filter" />Platform</label>
-      <label style="font-size:12px;"><input type="checkbox" name="sector" value="platform" class="sector filter" />Travel</label>
-      <label style="font-size:12px;"><input type="checkbox" name="sector" value="platform" class="sector" />Saas</label>
-
+      <% @sectors.each do |sector| %>
+        <label style="font-size:12px;"><input type="checkbox" name="sector" value="<%= sector.downcase.gsub(/\s+/, "") %>" class="sector filter" /><%= sector %></label>
+      <% end %>
     </form>
   </div>
   <div class="container">

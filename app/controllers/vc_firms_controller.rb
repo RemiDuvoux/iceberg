@@ -1,21 +1,14 @@
 class VcFirmsController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index, :show]
   def index
-    if params[:query].nil?
       @vc_firms = VcFirm.all
-    elsif params[:query] == "seed_stage"
-      @vc_firms = VcFirm.where.not(:seed_stage => nil)
-    elsif params[:query] == "series_a"
-      @vc_firms = VcFirm.where.not(:series_a => nil)
-    elsif params[:query] == "series_b"
-      @vc_firms = VcFirm.where.not(:series_b => nil)
-    elsif params[:query] == "series_c"
-      @vc_firms = VcFirm.where.not(:series_c => nil)
-    elsif params[:query] == "growth_stage"
-      @vc_firms = VcFirm.where.not(:growth_stage => nil)
-    end
-
-
+      sectors_array = []
+      @vc_firms.each do |vc_firm|
+        vc_firm.startups.each do |startup|
+          sectors_array << startup.sector
+        end
+      end
+      @sectors = sectors_array.uniq.select {|element| element != nil}
   end
 
   def show
