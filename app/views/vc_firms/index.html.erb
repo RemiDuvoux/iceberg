@@ -33,40 +33,82 @@
 <script>
   $(document).ready(function() {
     $('#stage-filters :input').click();
+    $('#sector-filters :input').click()
   });
 
 
   // Filtering for stage with Jquery
-  $('.filter').on('click',function(){
-    var stage_list = [];
-    if ($('#stage-filters :input:checked').length == 0){
-      $(document).find('.card').parent().addClass("display-none")};
-      $('#stage-filters :input:checked').each(function(){
-        var stage = $(this).val();
-        stage_list.push(stage);
-        $(document).find('.card').parent().addClass("display-none");
-      });
-      stage_list.forEach(function(stage){
-        $(document).find('.'+ stage).parent().removeClass("display-none");
-      });
-    });
+  // $('.stage').on('click',function(){
+  //   var stage_list = [];
+  //   if ($('#stage-filters :input:checked').length == 0){
+  //     $(document).find('.card').parent().addClass("display-none")};
+  //     $('#stage-filters :input:checked').each(function(){
+  //       var stage = $(this).val();
+  //       stage_list.push(stage);
+  //       $(document).find('.card').parent().addClass("display-none");
+  //     });
+  //     stage_list.forEach(function(stage){
+  //       $(document).find('.'+ stage).parent().removeClass("display-none");
+  //     });
+  //   });
 
-  // Filtering for sector with Jquery
-  $('.sector').on('click',function(){
+  // // Filtering for sector with Jquery
+  // $('.sector').on('click',function(){
+  //   var sector_list = [];
+  //   if ($('#sector-filters :input:checked').length == 0){
+  //     $(document).find('.card').parent().addClass("display-none")};
+  //     $('#sector-filters :input:checked').each(function(){
+  //       var sector = $(this).val();
+  //       sector_list.push(sector);
+  //       $(document).find('.card').parent().addClass("display-none");
+  //       console.log("ok");
+  //     });
+  //     sector_list.forEach(function(sector){
+  //       $(document).find('.'+ sector).parent().removeClass("display-none");
+  //     });
+  //   });
 
-    if ($('#sector-filters :input:checked').length == 0){
-      $(document).find('.card').parent().parent().addClass("display-none")};
-      $('#sector-filters :input:checked').each(function(){
+
+
+  $('.filter').on('click', function(){
+    sector_object = [];
+    stage_object = [];
+    $('#sector-filters :input:checked').each(function(){
         var sector = $(this).val();
-        sector_list.push(sector);
-        $(document).find('.card').parent().addClass("display-none");
-      });
-      sector_list.forEach(function(sector){
-        $(document).find('.'+ sector).parent().removeClass("display-none");
+        sector_object.push(sector);
+    });
+    console.log(sector_object);
+    $('#stage-filters :input:checked').each(function(){
+          var stage = $(this).val();
+          stage_object.push(stage);
+    });
+    console.log(stage_object);
+    $(document).find('.card').parent().addClass("display-none");
+    sector_object.forEach(function(sector){
+      stage_object.forEach(function(stage){
+        $(document).find('.card').each(function(){
+          if ($(this).hasClass(sector) && $(this).hasClass(stage)){
+            $(this).parent().removeClass("display-none")
+          };
+        });
       });
     });
+  });
 
-  </script>
+</script>
+
+
+
+
   <% end %>
 
+
+<!-- On click on whatever filters > 2 arrays are empty
+Fill the stage array with stages
+Fill the sector array with sectors
+Hide each card
+Iterate on each card of the stage array.
+Check if they have one of the sector class.
+If yes, display.
+ -->
 
