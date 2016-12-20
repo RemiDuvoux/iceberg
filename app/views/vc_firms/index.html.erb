@@ -1,35 +1,40 @@
 <div class="wrapper">
   <div class="filters-container text-center">
     <form id=stage-filters>
-    <label style="font-size:12px;"><input type="checkbox" name="stage" value="seed_stage" class="stage filter" /> Seed stage</label>
-    <label style="font-size:12px;"><input type="checkbox" name="stage" value="series_a" class="stage filter" /> Series A</label>
-    <label style="font-size:12px;"><input type="checkbox" name="stage" value="series_b" class="stage filter" /> Series B</label>
-    <label style="font-size:12px;"><input type="checkbox" name="stage" value="series_c" class="stage filter" /> Series C</label>
-    <label style="font-size:12px;"><input type="checkbox" name="stage" value="growth_stage" class="stage filter" /> Growth Stage</label>
+      <label style="font-size:12px;"><input type="checkbox" name="stage" value="seed_stage" class="stage filter" /> <span class="label-checkbox">Seed stage</span></label>
+      <label style="font-size:12px;"><input type="checkbox" name="stage" value="series_a" class="stage filter" /> <span class="label-checkbox">Series A</span></label>
+      <label style="font-size:12px;"><input type="checkbox" name="stage" value="series_b" class="stage filter" /> <span class="label-checkbox">Series B</span></label>
+      <label style="font-size:12px;"><input type="checkbox" name="stage" value="series_c" class="stage filter" /> <span class="label-checkbox">Series C</span></label>
+      <label style="font-size:12px;"><input type="checkbox" name="stage" value="growth_stage" class="stage filter" /> <span class="label-checkbox">Growth Stage</span></label>
     </form>
     <form id="sector-filters">
       <% @sectors.each do |sector| %>
-        <label style="font-size:12px;"><input type="checkbox" name="sector" value="<%= sector.downcase.gsub(/\s+/, "") %>" class="sector filter" /><%= sector %></label>
+      <label style="font-size:12px;"><input type="checkbox" name="sector" value="<%= sector.downcase.gsub(/\s+/, "") %>" class="sector filter" /><span class="label-checkbox"><%= sector %></span></label>
       <% end %>
     </form>
   </div>
-  <div class="container">
-    <div class="row">
-      <% @vc_firms.each do |vc_firm| %>
-      <div class="col-md-6">
-        <%= render 'vc_card', vc_firm: vc_firm %>
+  <div class='card-wrapper'>
+    <div class='card-wrapper-background has-section'>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <% @vc_firms.each do |vc_firm| %>
+        <div class="col-md-6">
+          <%= render 'vc_card', vc_firm: vc_firm %>
+        </div>
+        <% end %>
       </div>
-      <% end %>
     </div>
   </div>
-</div>
 
-<% content_for(:after_js) do %>
-<script>
-  $(document).ready(function() {
-    $('#stage-filters :input').click();
-    $('#sector-filters :input').click()
-  });
+  <% content_for(:after_js) do %>
+  <script>
+    $(document).ready(function() {
+      $('#stage-filters :input').click();
+      $('#sector-filters :input').click()
+    });
 
 
   // Filtering for stage with Jquery
@@ -69,13 +74,13 @@
     sector_object = [];
     stage_object = [];
     $('#sector-filters :input:checked').each(function(){
-        var sector = $(this).val();
-        sector_object.push(sector);
+      var sector = $(this).val();
+      sector_object.push(sector);
     });
     console.log(sector_object);
     $('#stage-filters :input:checked').each(function(){
-          var stage = $(this).val();
-          stage_object.push(stage);
+      var stage = $(this).val();
+      stage_object.push(stage);
     });
     console.log(stage_object);
     $(document).find('.card').parent().addClass("display-none");
@@ -95,7 +100,7 @@
 
 
 
-  <% end %>
+<% end %>
 
 
 <!-- On click on whatever filters > 2 arrays are empty
@@ -105,5 +110,5 @@ Hide each card
 Iterate on each card of the stage array.
 Check if they have one of the sector class.
 If yes, display.
- -->
+-->
 
