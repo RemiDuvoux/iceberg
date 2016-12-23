@@ -11,7 +11,11 @@ end
 csv_options = { col_sep: ';', quote_char: '"'}
 filepath_startups ||= "#{Rails.root}/db/rounds_seed_50_first.csv"
 CSV.foreach(filepath_startups, csv_options) do |row|
-  new_startup = Startup.new(name: row[1], sector: row[2])
+  if Startup.find_by(name: row[1]).nil?
+    new_startup = Startup.new(name: row[1], sector: row[2])
+  else
+    new_startup = Startup.find_by(name: row[1])
+  end
   new_round = Round.new
   new_round.startup = new_startup
   new_round.vc_firm = VcFirm.find_by(name: row[0])

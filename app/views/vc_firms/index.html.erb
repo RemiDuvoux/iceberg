@@ -31,43 +31,6 @@
 
   <% content_for(:after_js) do %>
   <script>
-    $(document).ready(function() {
-      $('#stage-filters :input').click();
-      $('#sector-filters :input').click()
-    });
-
-
-  // Filtering for stage with Jquery
-  // $('.stage').on('click',function(){
-  //   var stage_list = [];
-  //   if ($('#stage-filters :input:checked').length == 0){
-  //     $(document).find('.card').parent().addClass("display-none")};
-  //     $('#stage-filters :input:checked').each(function(){
-  //       var stage = $(this).val();
-  //       stage_list.push(stage);
-  //       $(document).find('.card').parent().addClass("display-none");
-  //     });
-  //     stage_list.forEach(function(stage){
-  //       $(document).find('.'+ stage).parent().removeClass("display-none");
-  //     });
-  //   });
-
-  // // Filtering for sector with Jquery
-  // $('.sector').on('click',function(){
-  //   var sector_list = [];
-  //   if ($('#sector-filters :input:checked').length == 0){
-  //     $(document).find('.card').parent().addClass("display-none")};
-  //     $('#sector-filters :input:checked').each(function(){
-  //       var sector = $(this).val();
-  //       sector_list.push(sector);
-  //       $(document).find('.card').parent().addClass("display-none");
-  //       console.log("ok");
-  //     });
-  //     sector_list.forEach(function(sector){
-  //       $(document).find('.'+ sector).parent().removeClass("display-none");
-  //     });
-  //   });
-
 
 
   $('.filter').on('click', function(){
@@ -78,12 +41,38 @@
       sector_object.push(sector);
     });
     console.log(sector_object);
+
     $('#stage-filters :input:checked').each(function(){
       var stage = $(this).val();
       stage_object.push(stage);
     });
     console.log(stage_object);
-    $(document).find('.card').parent().addClass("display-none");
+    if (stage_object.length > 0 || sector_object.length > 0){
+      $(document).find('.card').parent().addClass("display-none");
+    } else {
+      $(document).find('.card').parent().removeClass("display-none");
+    }
+
+    if (sector_object.length == 0 ) {
+      stage_object.forEach(function(stage){
+        $(document).find('.card').each(function(){
+          if ($(this).hasClass(stage)) {
+          $(this).parent().removeClass("display-none");
+          };
+        });
+      });
+    };
+
+    if (stage_object.length == 0 ) {
+      sector_object.forEach(function(sector){
+        $(document).find('.card').each(function(){
+          if ($(this).hasClass(sector)){
+            $(this).parent().removeClass("display-none");
+          };
+        });
+      });
+    };
+
     sector_object.forEach(function(sector){
       stage_object.forEach(function(stage){
         $(document).find('.card').each(function(){
