@@ -3,6 +3,13 @@
   width: 90vw;
   margin-left: 5vw;
   margin-right: 5vw;
+  border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    vertical-align: center;
+    box-shadow: 3px 3px 4px 0px rgba(120, 120, 120, 0.3);
+    background-color: white;
+    justify-content: center;
 }
 
 .label-checkbox {
@@ -11,3 +18,4 @@
 input[type="checkbox"] {
   margin-top: 0;
 }
+

@@ -1,176 +1,241 @@
 360 Capital Partners;Leetchi;Fintech
 360 Capital Partners;Withings;Hardware
-360 Capital Partners;Aramis Auto;
-360 Capital Partners;Teddybear;
+360 Capital Partners;Aramis Auto;Ecommerce
+360 Capital Partners;Teddybear;Home
 Alven;Captain Train;Travel
-Alven;Bime;
+Alven;Bime;Saas
 Alven;Drivy;Platform
 Alven;Algolia;Saas
 Aster Capital;Solaire direct;Energy
-Aster Capital;cpower;
-Aster Capital;connectblue;
+Aster Capital;Cpower;Energy
+Aster Capital;Connectblue;Energy
 Aurinvest;Priceminister;Ecommerce
-Aurinvest;Empruntis;
-Aurinvest;Famoco;
-Aurinvest;Azalead;
-Banexi;Kelkoo;
-Banexi;Linkfluence;
-Banexi;Adyoulike;
-Banexi;Dolmen;
-BPI;Talentsoft;
+Aurinvest;Empruntis;Fintech
+Aurinvest;Famoco;Hardware
+Aurinvest;Azalead;Saas
+Banexi;Kelkoo;Ecommerce
+Banexi;Linkfluence;Saas
+Banexi;Adyoulike;Advertising
+Banexi;Dolmen;Saas
+BPI;Talentsoft;Saas
 BPI;Netatmo;Hardware
-BPI;Manomano;
-BPI;iAdvize;
+BPI;Manomano;Ecommerce
+BPI;iAdvize;Saas
 Breega;FoodCh̩ri;Foodtech
-Breega;GoJob;
-Breega;Solendro;
-Breega;Clic & Walk;
-Cap Agro;Naio Technologies;
-Cap Agro;Yooji;
-Caphorn;Adents;
-Caphorn;Vekia;
-Caphorn;Deolan;
-Caphorn;Critizr;
+Breega;GoJob;Platform
+Breega;Solendro;Ecommerce
+Breega;Clic & Walk;Saas
+Cap Agro;Naio Technologies;Hardware
+Cap Agro;Yooji;Ecommerce
+Caphorn;Adents;Saas
+Caphorn;Vekia;Saas
+Caphorn;Deolan;Saas
+Caphorn;Critizr;Platform
 Cathay Innovation;Drivy;Platform
-Cathay Innovation;Trifacta;
-Cathay Innovation;Pinduoduo;
-Cathay Innovation;Alkemics;
-Creadev;Sculpteo;
-Creadev;Ysance;
-Creadev;Digischool;
-Creadev;Yes'n'you;
-Daphni;- not yet -;
+Cathay Innovation;Trifacta;Saas
+Cathay Innovation;Pinduoduo;Ecommerce
+Cathay Innovation;Alkemics;Saas
+Creadev;Sculpteo;Hardware
+Creadev;Ysance;Saas
+Creadev;Digischool;EdTech
+Creadev;Yes'n'you;EdTech
 Elaia Partners;Criteo;Saas
 Elaia Partners;Sigfox;Hardware
-Elaia Partners;Teads;
-Elaia Partners;Mirakl;
-Elaia Partners;Shift Technology;
+Elaia Partners;Teads;Advertising
+Elaia Partners;Mirakl;Marketplace
+Elaia Partners;Shift Technology;Saas
 Elaia Partners;Agriconomie;Foodtech
-Hi inov;Famoco;
-Hi inov;Geolid;
-Hi inov;Platform.sh;
-Hi inov;Veepki;
-Idinvest;Criteo;
-Idinvest;Talend;
-Idinvest;Frichti;
-Idinvest;happn;
-Iris Capital;Mopub;
-Iris Capital;NetAtmo;
-Iris Capital;Shift Technology;
-Iris Capital;iAdvize;
+Hi inov;Famoco;Hardware
+Hi inov;Geolid;Advertising
+Hi inov;Platform.sh;Cloud
+Hi inov;Deepki;Data
+Idinvest;Criteo;Advertising
+Idinvest;Talend;Data
+Idinvest;Frichti;Foodtech
+Idinvest;happn;Dating
+Iris Capital;Mopub;Advertising
+Iris Capital;NetAtmo;Hardware
+Iris Capital;Shift Technology;Saas
+Iris Capital;iAdvize;Advertising
 ISAI;Blablacar;Platform
-ISAI;StickyAds;
-ISAI;Evaneos;
+ISAI;StickyAds;Advertising
+ISAI;Evaneos;Travel
 ISAI;Hopwork;Platform
-Newfund;1001pharmacies;
+Newfund;1001pharmacies;Medtech
 Newfund;Invoxia;Hardware
 Newfund;Aircall;Saas
-Newfund;Camping&co;
+Newfund;Camping&co;Travel
 Omnes;BlaBlaCar;Platform
 Omnes;SigFox;Hardware
-Omnes;Scality;
-Omnes;Poxel;
+Omnes;Scality;Cloud
+Omnes;Poxel;Medtech
 Otium;La Fourchette;Foodtech
-Otium;Balin̩a;
-Otium;Shippeo;
-Otium;Octoly;
-Partech;Sigfox;
-Partech;Pricematch;
-Partech;Teads;Adtech
+Otium;Shippeo;Saas
+Otium;Octoly;Advertising
+Partech;Sigfox;Hardware
+Partech;Pricematch;Saas
+Partech;Teads;Advertising
 Partech;Dayuse;Foodtech
-Serena Capital;La Fourchette;
-Serena Capital;Dataiku;
-Serena Capital;Evaneos;
-Serena Capital;Aramis Auto;
+Serena Capital;La Fourchette;Foodtech
+Serena Capital;Dataiku;Data
+Serena Capital;Evaneos;Travel
+Serena Capital;Aramis Auto;Ecommerce
 Seventure;Prestashop;Ecommerce
-Seventure;Talentsoft;
-Seventure;Recommerce Solutions;
-Seventure;SumUp/Payleven;
-Truffle Capital;Actility;
-Truffle Capital;CARMAT;
-Truffle Capital;Paytop;
-Truffle Capital;Credit.fr;
-Ventech;Withings;
-Ventech;StickyAds;Adtech
-Ventech;Unilend;
-Ventech;Ogury;
-XAnge;A Little Market;
-XAnge;Neolane;
-XAnge;Believe Digital;
-XAnge;La Ruche qui dit Oui;
-Axa Strategic Ventures;Evercontact;
-Axa Strategic Ventures;Easypropri̩taire;
-Axa Strategic Ventures;Policy Genius;
-MAIF Avenir;Coolicar;
-MAIF Avenir;Guest to guest;
-MAIF Avenir;Cozy;
-Nokia Growth Partners;Babbel;
-Nokia Growth Partners;Deliveroo;
-Nokia Growth Partners;Drivy;
-Nokia Growth Partners;Verve;
-Orange Digital Ventures;Actility;
+Seventure;Talentsoft;Saas
+Seventure;Recommerce Solutions;Ecommerce
+Seventure;SumUp/Payleven;Fintech
+Truffle Capital;Actility;Hardware
+Truffle Capital;CARMAT;Medtech
+Truffle Capital;Paytop;Fintech
+Truffle Capital;Credit.fr;Fintech
+Ventech;Withings;Hardware
+Ventech;StickyAds;Advertising
+Ventech;Unilend;Fintech
+Ventech;Ogury;Advertising
+XAnge;A Little Market;Ecommerce
+XAnge;Neolane;Advertising
+XAnge;Believe Digital;Platform
+XAnge;La Ruche qui dit Oui;Foodtech
+Axa Strategic Ventures;Evercontact;Saas
+Axa Strategic Ventures;Easypropriétaire;Platform
+Axa Strategic Ventures;Policy Genius;Insurtech
+MAIF Avenir;Koolicar;Platform
+MAIF Avenir;Guest to guest;Platform
+MAIF Avenir;Cozy;Data
+Nokia Growth Partners;Babbel;EdTech
+Nokia Growth Partners;Deliveroo;Foodtech
+Nokia Growth Partners;Drivy;Platform
+Orange Digital Ventures;Actility;Hardware
 Orange Digital Ventures;Wynd;Hardware
-Orange Digital Ventures;Chain;
-Orange Digital Ventures;Afrostream;
-Orange Digital Ventures;Afrimarket;
-Schibsted Growth;Pr̻t d'union;
+Orange Digital Ventures;Chain;Blockchain
+Orange Digital Ventures;Afrostream;Entertainment
+Orange Digital Ventures;Afrimarket;Fintech
+Schibsted Growth;Younited Credit;Fintech
 Schibsted Growth;Kudoz;Platform
-Schibsted Growth;Monsieur Drive;
-SEB Alliance;Alkemics;
-SEB Alliance;Feeligreen;
+Schibsted Growth;Monsieur Drive;Comparator
+SEB Alliance;Alkemics;Advertising
+SEB Alliance;Feeligreen;Care
 SEB Alliance;Kolibree;Hardware
-SEB Alliance;SeniorAdom;
+SEB Alliance;SeniorAdom;Silver Economy
 Via Id;Drivy;Platform
 Via Id;Heetch;Platform
-Via Id;Xee;
-Via Id;WayzUp;
-Alliance Entreprendre;Roomlala.com;
-Alliance Entreprendre;Magency Digital;
-Alliance Entreprendre;Makever;
+Via Id;Xee;Hardware
+Via Id;WayzUp;Platform
+Alliance Entreprendre;Roomlala.com;Platform
+Alliance Entreprendre;Magency Digital;Saas
+Alliance Entreprendre;Makever;Entertainment
 A Plus Finance;Weezevent;Entertainment
-A Plus Finance;Geolid;
-A Plus Finance;Cheerz;
-Alto invest;Talentsoft;
-Alto invest;Easyvista;
-Alto invest;Digischool;
-Amundi;LaunchMetrics;
-Amundi;Sequans Communications;
-Amundi;Ekinops;
-Ardian Growth;Tabmo;
-Ardian Growth;Bricopriv̩.com;
-Ardian Growth;Ariane;
-BlackFin Capital Partners;Comparadise;
-BlackFin Capital Partners;Santiane;
-BlackFin Capital Partners;Fundrock;
+A Plus Finance;Geolid;Advertising
+A Plus Finance;Cheerz;Entertainment
+Alto invest;Talentsoft;Saas
+Alto invest;Easyvista;Saas
+Alto invest;Digischool;EdTech
+Amundi;LaunchMetrics;Saas
+Amundi;Sequans Communications;Hardware
+Ardian Growth;Tabmo;Advertising
+Ardian Growth;Bricopriv;Home
+Ardian Growth;Ariane;Travel
+BlackFin Capital Partners;Comparadise;Insurtech
+BlackFin Capital Partners;Santiane;Medtech
+BlackFin Capital Partners;Fundrock;Fintech
 Citizen Capital;Ulule;Fintech
-Citizen Capital;Business Table;
-Citizen Capital;Trace.tv;
-CIC Capital Privé;Mister Auto;
-CIC Capital Privé;Captain Train;
+Citizen Capital;Business Table;Platform
+Citizen Capital;Trace.tv;Entertainment
+CIC Capital Privé;Mister Auto;Platform
+CIC Capital Privé;Captain Train;Travel
 CIC Capital Privé;Deezer;Entertainment
 CIC Capital Privé;Chauffeur Priv̩;Platform
-Entrepreneur Venture;Synthesio;
-Entrepreneur Venture;Edjing;
-Entrepreneur Venture;Brainwave;
-Eurazeo;Younited Credit;
+Entrepreneur Venture;Synthesio;Advertising
+Entrepreneur Venture;Edjing;Hardware
+Entrepreneur Venture;Brainwave;Security
+Eurazeo;Younited Credit;Fintech
 Eurazeo;Vestiaire Collective;Ecommerce
-Eurazeo;PeopleDoc;
-Eurazeo;Farfetch;
-Generis Capital Partners;Vide Dressing;
-Generis Capital Partners;Mazeberry;
-Generis Capital Partners;Tabmo;
-Generis Capital Partners;Envie de Fraises;
-GIMV;Teads;Adtech
-GIMV;MarcoVasco;
-GIMV;Macke Vision;
-Naxicap;Adents;
-Naxicap;Streamdata.io;
+Eurazeo;PeopleDoc;Saas
+Eurazeo;Farfetch;Ecommerce
+Generis Capital Partners;Vide Dressing;Ecommerce
+Generis Capital Partners;Mazeberry;Saas
+Generis Capital Partners;Tabmo;Advertising
+Generis Capital Partners;Envie de Fraises;Fashion
+GIMV;Teads;Advertising
+GIMV;MarcoVasco;Travel
+GIMV;Macke Vision;Entertainment
+Naxicap;Adents;Saas
+Naxicap;Streamdata.io;Data
 Naxicap;Miliboo;Ecommerce
-Nextstage;Coorpacademy;
+Nextstage;Coorpacademy;EdTech
 Nextstage;1000mercis;Fintech
-Nextstage;Wedia;
-Siparex (Proximit̩ Innovation);ConnecThings;
-Siparex (Proximit̩ Innovation);Ekinops;
-Time for Growth;Geolid;
+Nextstage;Wedia;Saas
+Siparex (Proximit̩ Innovation);ConnecThings;Hardware
+Time for Growth;Geolid;Advertising
 Time for Growth;Usine.io;Hardware
-Time for Growth;Oodrive;
+Time for Growth;Oodrive;Saas
+ACE Management;Sentryo;Security
+ACE Management;RB3D;Hardware
+ACE Management;3DTrust;Hardware
+Innovacom;21Net;Travel
+Innovacom;Astellia;Telco
+Innovacom;Dimelo;Saas
+Innovacom;Exagan;Hardware
+Seventure;EasyVoyage;Travel
+Seventure;SmartFocus;Cloud
+Seventure;Parrot;Hardware
+Seventure;VistaPrint;Ecommerce
+Sofinnova;VistaPrint;Ecommerce
+Sofinnova;Parrot;Hardware
+Sofinnova;Movetis;Medtech
+Xerys;Biolog-id;Medtech
+Xerys;CryoPur;Medtech
+Xerys;Connecthings;Hardware
+3T Capital;360Learning;EdTech
+3T Capital;Visibrain;Advertising
+CapDecisif;Sequans Communications;Hardware
+CapDecisif;AlephD;Advertising
+CapDecisif;Kynogon;Entertainment
+Cèdre Participations;Beepings;Hardware
+Cèdre Participations;Moneytis;Fintech
+Cèdre Participations;Sowefund;Fintech
+Fa#;The Other Store;Ecommerce
+Fa#;SoCloz;Saas
+Fa#;Comiteo;Saas
+Fa#;SAVgroup;Saas
+Fred&Farid;Melty;Media
+Fred&Farid;Artefact;Media
+Fred&Farid;Babbler;Media
+Iron Capital;Charme & Traditions;Travel
+Iron Capital;Cheerz;Entertainment
+Iron Capital;TheFamily;Incubator
+Iron Capital;Youboox;EdTech
+iSource;Sequans Communications;Hardware
+iSource;Captain Dash;Saas
+iSource;JeChange.fr;Comparator
+iSource;Sirdata;Data
+IT Translation;Accelad;Saas
+IT Translation;Clubble;Saas
+IT Translation;Elqui;Saas
+IT Translation;Mediego;Advertising
+Jaïna Capital;Devialet;Hardware
+Jaïna Capital;Made.com;Ecommerce
+Jaïna Capital;Melty;Media
+Jaïna Capital;PopChef;Foodtech
+Kerala Ventures;Doctolib;Medtech
+Kerala Ventures;Hopwork;Platform
+Kerala Ventures;Privateaser;Platform
+Kerala Ventures;A.mob;Advertising
+Kima;Afrimarket;Fintech
+Kima;Front;Saas
+Kima;Heetch;Platform
+Kima;Payfit;Saas
+Kima;Docker;Saas
+Kima;Transferwise;Fintech
+Kima;Captain Train;Travel
+Kima;Aircall;Saas
+Nestadio Capital;CodinGame;EdTech
+Nestadio Capital;ITrust;Security
+Nestadio Capital;Webshell;Security
+Nestadio Capital;ZenPark;Platform
+SIDE Capital;Juliedesk;AI
+SIDE Capital;Regaind;AI
+Starquest;Vodeclic;EdTech
+Starquest;Probance;Data
+Starquest;WagaEnergy;Energy
+Starquest;SunPartner;Energy
