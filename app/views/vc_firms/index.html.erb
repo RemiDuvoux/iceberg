@@ -9,7 +9,7 @@
     </form>
     <form id="sector-filters">
       <% @sectors.each do |sector| %>
-      <label style="font-size:12px;"><input type="checkbox" name="sector" value="<%= sector.downcase.gsub(/\s+/, "") %>" class="sector filter" /><span class="label-checkbox"><%= sector %></span></label>
+      <label style="font-size:12px;"><input type="checkbox" name="sector" value="<%= sector.downcase.gsub(/\s+/, '') %>" class="sector filter" /><span class="label-checkbox"><%= sector %></span></label>
       <% end %>
     </form>
   </div>
