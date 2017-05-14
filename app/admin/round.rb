@@ -1,4 +1,4 @@
-ActiveAdmin.register VcFirm do
+ActiveAdmin.register Round do
 
 # See permitted parameters documentation:
 # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
@@ -13,6 +13,5 @@ ActiveAdmin.register VcFirm do
 #   permitted
 # end
 
-permit_params :vc_type, :city, :office_address, :description, :website, :name, :logo, :twitter, :facebook, :creation_date, :country, :category
 
 end
